@@ -58,7 +58,7 @@
                         <a href="index.html" class="nav-item nav-link active">Inicio</a>
                         <a href="about.html" class="nav-item nav-link">Sobre</a>
                         <a href="service.html" class="nav-item nav-link">Serviços</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="menu.html" class="nav-item nav-link">Pacotes</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
                             <div class="dropdown-menu m-0">
@@ -69,7 +69,7 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Pacotes</a>
+                    <a href="booking.html" class="btn btn-primary py-2 px-4">Reservas</a>
                 </div>
             </nav>
 
@@ -81,19 +81,130 @@
                             <p class="text-white animated slideInLeft mb-4 pb-2">O melhor de todos </p>
                             <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Faça a reserva agora </a>
                         </div>
-                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" src="img/eco.png" alt="">
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
+<section class="section bg-light pb-0"  >
+      <div class="container">
+       <h3>Reserva</h3>
+        <div class="row check-availabilty" id="next">
+          <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
 
+           <form action="/reservar" method="POST" id="formReserva" class="mb-5">
+  <div class="row">
+
+    <!-- Nome -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <label for="name" class="font-weight-bold text-black">Nome</label>
+      <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome completo" required>
+    </div>
+
+    <!-- Telefone -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <label for="phone" class="font-weight-bold text-black">Telefone</label>
+      <input type="tel" id="phone" name="phone" class="form-control" placeholder="+258 ..." required>
+    </div>
+
+    <!-- Email -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <label for="email" class="font-weight-bold text-black">Email</label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" required>
+    </div>
+
+    <!-- Destino -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <label for="destination" class="font-weight-bold text-black">Destino</label>
+      <select id="destination" name="destination" class="form-control" required>
+        <option value="">Selecione</option>
+        <option value="Ilha de Moçambique">Ilha de Moçambique</option>
+        <option value="Parque Nacional da Gorongosa">Parque Nacional da Gorongosa</option>
+        <option value="Vilankulo">Vilankulo</option>
+        <option value="Arquipélago de Bazaruto">Arquipélago de Bazaruto</option>
+        <option value="Ilha da Inhaca">Ilha da Inhaca</option>
+        <option value="Ponta do Ouro">Ponta do Ouro</option>
+        <option value="Parque Nacional de Limpopo">Parque Nacional de Limpopo</option>
+        <option value="Parque Nacional do Gilé">Parque Nacional do Gilé</option>
+        <option value="Parque Nacional de Zinave">Parque Nacional de Zinave</option>
+        <option value="Parque Nacional de Banhine">Parque Nacional de Banhine</option>
+        <option value="Parque Nacional de Chimanimane">Parque Nacional de Chimanimane</option>
+        <option value="Parque Nacional de Maputo">Parque Nacional de Maputo</option>
+        <option value="Parque Nacional de Magué">Parque Nacional de Magué</option>
+        <option value="Parque Nacional de Quirimbas">Parque Nacional de Quirimbas</option>
+        <option value="Reserva Nacional de Pomene">Reserva Nacional de Pomene</option>
+        <option value="Reserva Nacional de Marrumeu">Reserva Nacional de Marrumeu</option>
+        <option value="Reserva Especial de Niassa">Reserva Especial de Niassa</option>
+        <option value="Outro (a combinar)">Outro (a combinar)</option>
+      </select>
+    </div>
+
+    <!-- Check-In -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <label for="checkin_date" class="font-weight-bold text-black">Check-In</label>
+      <input type="date" id="checkin_date" name="checkin_date" class="form-control" required>
+    </div>
+
+    <!-- Check-Out -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <label for="checkout_date" class="font-weight-bold text-black">Check-Out</label>
+      <input type="date" id="checkout_date" name="checkout_date" class="form-control" required>
+    </div>
+
+    <!-- Adultos -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <label for="adults" class="font-weight-bold text-black">Adultos</label>
+      <select id="adults" name="adults" class="form-control" required>
+        <option value="">Selecione</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4+">4+</option>
+      </select>
+    </div>
+
+    <!-- Crianças -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <label for="children" class="font-weight-bold text-black">Crianças</label>
+      <select id="children" name="children" class="form-control">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4+">4+</option>
+      </select>
+    </div>
+
+    <!-- Notas adicionais -->
+    <div class="col-12 mb-3">
+      <label for="message" class="font-weight-bold text-black">Notas adicionais</label>
+      <textarea id="message" name="message" class="form-control" rows="4" placeholder="Observações importantes"></textarea>
+    </div>
+
+    <!-- Botão -->
+    <div class="col-md-6 col-lg-3 align-self-end mb-3">
+      <button type="submit" class="btn btn-primary btn-block text-white">Fazer reserva</button>
+    </div>
+
+  </div>
+</form>
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
 
         <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container">
+                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h5 class="section-title ff-secondary text-center text-primary fw-normal">Outros Serviços</h5>
+      <h1 class="mb-5">Explore Nossos Serviços</h1>
+    </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                  <div class="service-item rounded pt-3">
@@ -268,7 +379,7 @@
 }
 </style>
         <!-- Menu Start -->
-        <div class="container-xxl py-5">
+        <!-- <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Alimentaçao</h5>
@@ -612,6 +723,247 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+         <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Pacotes de Excursao e Turismos</h5>
+                    <h1 class="mb-5">Pacotes Nacionais</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-car fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Pacotes com guia</small>
+                                    <h6 class="mt-n1 mb-0">Guia turistico</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-moto fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Launch</h6>
+                                </div>
+                            </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-lion fa-ship fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Passeio de</small>
+                                    <h6 class="mt-n1 mb-0">   Barco</h6>
+                                </div>
+                            </a>
+                        </li> 
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/15.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Passeio Programados</span>
+                                                <span class="text-primary">2000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Explore a savana</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/12.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Excursao de maritima</span>
+                                                <span class="text-primary">3000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Venha andar sobre o rio </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/16.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Trilha sub as montanhas</span>
+                                                <span class="text-primary">1500 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic"> E no alto que chegamos perto do ceu</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/11.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Explore a fauna e bravia</span>
+                                                <span class="text-primary">2500 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Com animais selvagens </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/18.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Passeio de barco</span>
+                                                <span class="text-primary">3500 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Venha navegar sobre o mar</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Observação da Vida Selvagem</span>
+                                                <span class="text-primary">5000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Com segurança olhando de perto a vida animal</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/19.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Fotografia da Natureza</span>
+                                                <span class="text-primary">2000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Venha fazer fotos de alta qualidade</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/13.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ecoturismo</span>
+                                                <span class="text-primary">4000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/15.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Passeio Programados</span>
+                                                <span class="text-primary">2000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Explore a savana</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/12.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Excursao de maritima</span>
+                                                <span class="text-primary">3000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Venha andar sobre o rio </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/16.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Trilha sub as montanhas</span>
+                                                <span class="text-primary">1500 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic"> E no alto que chegamos perto do ceu</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/11.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Explore a fauna e bravia</span>
+                                                <span class="text-primary">2500 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Com animais selvagens </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/18.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Passeio de barco</span>
+                                                <span class="text-primary">3500 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Venha navegar sobre o mar</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Observação da Vida Selvagem</span>
+                                                <span class="text-primary">5000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Com segurança olhando de perto a vida animal</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/19.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Fotografia da Natureza</span>
+                                                <span class="text-primary">2000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Venha fazer fotos de alta qualidade</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/13.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ecoturismo</span>
+                                                <span class="text-primary">4000 MZN</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Menu End -->
 
@@ -807,15 +1159,15 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Eco-Travel</h4>
-                        <a class="btn btn-link" href="">Sobre-nos</a>
-                        <a class="btn btn-link" href="">Contacto</a>
-                        <a class="btn btn-link" href="">Reserva</a>
+                        <a class="btn btn-link" href="about.html">Sobre-nos</a>
+                        <a class="btn btn-link" href="contact.html">Contacto</a>
+                        <a class="btn btn-link" href="booking.html">Reserva</a>
                         <a class="btn btn-link" href="">Politicas de privacidade</a>
                         <a class="btn btn-link" href="">Termos & Condiços</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contacto</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Polana caniço, Maputo, Moçambique</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Cidade Maputo, Bairro Central,Avenida Ahmed Sekou Touré nr 1126, RC</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                         <div class="d-flex pt-2">
@@ -854,7 +1206,7 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
+                                <a href="index.html">Home</a>
                                 <a href="">Cookies</a>
                                 <a href="">Help</a>
                                 <a href="">FQAs</a>
