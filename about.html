@@ -44,268 +44,311 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-               <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"> <img src="img/eco.png" alt="Logo"></i>Eco-Travel</h1>
-                   
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link active">Sobre</a>
-                        <a href="service.html" class="nav-item nav-link">Serviços</a>
-                        <a href="menu.html" class="nav-item nav-link">Pacotes</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Reserva</a>
-                                <a href="team.html" class="dropdown-item">Nossa equipe</a>
-                                <a href="testimonial.html" class="dropdown-item">Testemunho</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+     <div class="container-xxl position-relative p-0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0">
+                <img src="img/eco.png" alt="Logo">
+                <span data-pt="Eco-Travel" data-en="Eco-Travel">Eco-Travel</span>
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="index.html" class="nav-item nav-link" data-pt="Inicio" data-en="Home">Inicio</a>
+                <a href="about.html" class="nav-item nav-link active" data-pt="Sobre" data-en="About">Sobre</a>
+                <a href="service.html" class="nav-item nav-link" data-pt="Serviços" data-en="Services">Serviços</a>
+                <a href="menu.html" class="nav-item nav-link" data-pt="Pacotes" data-en="Packages">Pacotes</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-pt="Paginas" data-en="Pages">Paginas</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="booking.html" class="dropdown-item" data-pt="Reserva" data-en="Booking">Reserva</a>
+                        <a href="team.html" class="dropdown-item" data-pt="Nossa equipe" data-en="Our Team">Nossa equipe</a>
+                        <a href="testimonial.html" class="dropdown-item" data-pt="Testemunho" data-en="Testimonials">Testemunho</a>
                     </div>
-                    <a href="booking.html" class="btn btn-primary py-2 px-4">Reservas</a>
                 </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Sobre-nos</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                            <li class="breadcrumb-item"><a href="#">Paginas</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Sobre</li>
-                        </ol>
-                    </nav>
-                </div>
+                <a href="contact.html" class="nav-item nav-link" data-pt="Contacto" data-en="Contact">Contacto</a>
             </div>
+              <button id="lang-toggle" class="btn btn-outline-light ms-3">EN</button>
+            <a href="booking.html" class="btn btn-primary py-2 px-4" data-pt="Reservas" data-en="Book Now">Reservas</a>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown" data-pt="Sobre-nos" data-en="About Us">Sobre-nos</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="#" data-pt="Inicio" data-en="Home">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="#" data-pt="Paginas" data-en="Pages">Paginas</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page" data-pt="Sobre" data-en="About">Sobre</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
         <!-- Navbar & Hero End -->
 
 
         <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/8.jpg">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/9.jpg" style="margin-top: 25%;">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/11.jpg">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/10.jpg">
-                            </div>
-                        </div>
+      <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/8.jpg">
                     </div>
-                    <div class="col-lg-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Sobre-nos</h5>
-                        <h1 class="mb-4">Missão
-                                             </h1>
-                        <p class="mb-4">A ECOTRAVEL tem como missão criar e oferecer experiências turísticas inovadoras e sustentáveis, através de safáris, excursões, montanhismo e campismo, que proporcionem ao viajante contato autêntico com a natureza e as culturas locais    </p>
-                           <h1 class="mb-4">Visão </h1>
-                        <p class="mb-4">Ser reconhecida como uma agência de referência em ecoturismo sustentável em Moçambique, promovendo experiências memoráveis que integrem conservação ambiental, educação ecológica e desenvolvimento comunitário.</p>
-                       
-                           <h1 class="mb-4">Valores </h1>
-                        <p class="mb-4">
-1. Sustentabilidade – Compromisso com práticas que respeitam a natureza e as comunidades. <br>
-
-
-2. Responsabilidade – Conduzir cada atividade de forma ética, consciente e com mínimo impacto ambiental.<br>
-
-3. Educação Ambiental – Promover a consciência ecológica entre viajantes e comunidades.<br>
-
-4. Valorização Cultural – Respeitar e enaltecer as tradições e identidades locais.<br>
-
-5. Inovação – Criar experiências diferenciadas e inesquecíveis no contato com a natureza.<br>
-6. Cooperação – Trabalhar em parceria com comunidades, instituições e organizações ambientais.<br>
-
-7. Preservação – Garantir que cada atividade contribua para a conservação da biodiversidade e dos ecossistemas.</p>
-                       
-                        <div class="row g-4 mb-4">
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">1</h1>
-                                    <div class="ps-4">
-                                        <p class="mb-0">Ano de </p>
-                                        <h6 class="text-uppercase mb-0">Experiencia</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">20</h1>
-                                    <div class="ps-4">
-                                        <p class="mb-0">Turismos ja feitos</p>
-                                        <h6 class="text-uppercase mb-0">Eco-Travel</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Ler mais</a>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/9.jpg" style="margin-top: 25%;">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/11.jpg">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/10.jpg">
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- About End -->
+            <div class="col-lg-6">
+                <h5 class="section-title ff-secondary text-start text-primary fw-normal" data-pt="Sobre-nos" data-en="About Us">Sobre-nos</h5>
+                <h1 class="mb-4" data-pt="Missão" data-en="Mission">Missão</h1>
+                <p class="mb-4" data-pt="A ECOTRAVEL tem como missão criar e oferecer experiências turísticas inovadoras e sustentáveis, através de safáris, excursões, montanhismo e campismo, que proporcionem ao viajante contato autêntico com a natureza e as culturas locais" data-en="ECOTRAVEL's mission is to create and offer innovative and sustainable tourism experiences through safaris, excursions, mountaineering, and camping, providing travelers with authentic contact with nature and local cultures.">
+                    A ECOTRAVEL tem como missão criar e oferecer experiências turísticas inovadoras e sustentáveis, através de safáris, excursões, montanhismo e campismo, que proporcionem ao viajante contato autêntico com a natureza e as culturas locais
+                </p>
 
+                <h1 class="mb-4" data-pt="Visão" data-en="Vision">Visão</h1>
+                <p class="mb-4" data-pt="Ser reconhecida como uma agência de referência em ecoturismo sustentável em Moçambique, promovendo experiências memoráveis que integrem conservação ambiental, educação ecológica e desenvolvimento comunitário." data-en="To be recognized as a leading sustainable ecotourism agency in Mozambique, promoting memorable experiences that integrate environmental conservation, ecological education, and community development.">
+                    Ser reconhecida como uma agência de referência em ecoturismo sustentável em Moçambique, promovendo experiências memoráveis que integrem conservação ambiental, educação ecológica e desenvolvimento comunitário.
+                </p>
 
-        <!-- Team Start -->
-       <div class="container-xxl pt-5 pb-3">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Membros da equipe</h5>
-                    <h1 class="mb-5">Os responsaveis das areas</h1>
+                <h1 class="mb-4" data-pt="Valores" data-en="Values">Valores</h1>
+                <p class="mb-4" data-pt="1. Sustentabilidade – Compromisso com práticas que respeitam a natureza e as comunidades. 
+2. Responsabilidade – Conduzir cada atividade de forma ética, consciente e com mínimo impacto ambiental.
+3. Educação Ambiental – Promover a consciência ecológica entre viajantes e comunidades.
+4. Valorização Cultural – Respeitar e enaltecer as tradições e identidades locais.
+5. Inovação – Criar experiências diferenciadas e inesquecíveis no contato com a natureza.
+6. Cooperação – Trabalhar em parceria com comunidades, instituições e organizações ambientais.
+7. Preservação – Garantir que cada atividade contribua para a conservação da biodiversidade e dos ecossistemas." 
+data-en="1. Sustainability – Commitment to practices that respect nature and communities.
+2. Responsibility – Conduct each activity ethically, consciously, and with minimal environmental impact.
+3. Environmental Education – Promote ecological awareness among travelers and communities.
+4. Cultural Appreciation – Respect and highlight local traditions and identities.
+5. Innovation – Create unique and unforgettable nature experiences.
+6. Cooperation – Work in partnership with communities, institutions, and environmental organizations.
+7. Preservation – Ensure each activity contributes to biodiversity and ecosystem conservation.">
+                    1. Sustentabilidade – Compromisso com práticas que respeitam a natureza e as comunidades. <br>
+                    2. Responsabilidade – Conduzir cada atividade de forma ética, consciente e com mínimo impacto ambiental.<br>
+                    3. Educação Ambiental – Promover a consciência ecológica entre viajantes e comunidades.<br>
+                    4. Valorização Cultural – Respeitar e enaltecer as tradições e identidades locais.<br>
+                    5. Inovação – Criar experiências diferenciadas e inesquecíveis no contato com a natureza.<br>
+                    6. Cooperação – Trabalhar em parceria com comunidades, instituições e organizações ambientais.<br>
+                    7. Preservação – Garantir que cada atividade contribua para a conservação da biodiversidade e dos ecossistemas.
+                </p>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">1</h1>
+                            <div class="ps-4">
+                                <p class="mb-0" data-pt="Ano de" data-en="Year of">Ano de</p>
+                                <h6 class="text-uppercase mb-0" data-pt="Experiência" data-en="Experience">Experiencia</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">20</h1>
+                            <div class="ps-4">
+                                <p class="mb-0" data-pt="Turismos já feitos" data-en="Tours Completed">Turismos ja feitos</p>
+                                <h6 class="text-uppercase mb-0" data-pt="Eco-Travel" data-en="Eco-Travel">Eco-Travel</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-               <div class="row g-4">
-    <!-- Membro 1 -->
-    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="team-item text-center rounded overflow-hidden">
-            <div class="rounded-circle overflow-hidden m-4">
-                <img class="img-fluid" src="img/homem.jpg" alt="">
-            </div>
-            <h5 class="mb-0">Mario Costa</h5>
-            <small>Gestor de Turismo Ecológico</small>
-            <div class="d-flex justify-content-center mt-3">
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- Membro 2 -->
-    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="team-item text-center rounded overflow-hidden">
-            <div class="rounded-circle overflow-hidden m-4">
-                <img class="img-fluid" src="img/homem.jpg" alt="">
-            </div>
-            <h5 class="mb-0">Carlos Ferreira</h5>
-            <small>Guia de Aventuras e Fotógrafo</small>
-            <div class="d-flex justify-content-center mt-3">
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- Membro 3 -->
-    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="team-item text-center rounded overflow-hidden">
-            <div class="rounded-circle overflow-hidden m-4">
-                <img class="img-fluid" src="img/homem.jpg" alt="">
-            </div>
-            <h5 class="mb-0">Adao Martins</h5>
-            <small>Educador Ambiental</small>
-            <div class="d-flex justify-content-center mt-3">
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- Membro 4 -->
-    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-        <div class="team-item text-center rounded overflow-hidden">
-            <div class="rounded-circle overflow-hidden m-4">
-                <img class="img-fluid" src="img/homem.jpg" alt="">
-            </div>
-            <h5 class="mb-0">João Silva</h5>
-            <small>Engenheiro Ambiental / Coordenador de Projetos</small>
-            <div class="d-flex justify-content-center mt-3">
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="" data-pt="Ler mais" data-en="Read More">Ler mais</a>
             </div>
         </div>
     </div>
 </div>
 
+        <!-- About End -->
+
+
+        <!-- Team Start -->
+<div class="container-xxl pt-5 pb-3">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal" data-pt="Membros da equipe" data-en="Team Members">Membros da equipe</h5>
+            <h1 class="mb-5" data-pt="Os responsáveis das áreas" data-en="Area Leaders">Os responsaveis das areas</h1>
+        </div>
+        <div class="row g-4">
+            <!-- Membro 1 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="img/homem.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0" data-pt="Mario Costa" data-en="Mario Costa">Mario Costa</h5>
+                    <small data-pt="Gestor de Turismo Ecológico" data-en="Ecotourism Manager">Gestor de Turismo Ecológico</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Membro 2 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="img/homem.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0" data-pt="Carlos Ferreira" data-en="Carlos Ferreira">Carlos Ferreira</h5>
+                    <small data-pt="Guia de Aventuras e Fotógrafo" data-en="Adventure Guide & Photographer">Guia de Aventuras e Fotógrafo</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Membro 3 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="img/homem.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0" data-pt="Adão Martins" data-en="Adão Martins">Adao Martins</h5>
+                    <small data-pt="Educador Ambiental" data-en="Environmental Educator">Educador Ambiental</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Membro 4 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="img/homem.jpg" alt="">
+                    </div>
+                    <h5 class="mb-0" data-pt="João Silva" data-en="João Silva">João Silva</h5>
+                    <small data-pt="Engenheiro Ambiental / Coordenador de Projetos" data-en="Environmental Engineer / Project Coordinator">Engenheiro Ambiental / Coordenador de Projetos</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</div>
+
         <!-- Team End -->
         
 
         <!-- Footer Start -->
-           <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Eco-Travel</h4>
-                        <a class="btn btn-link" href="about.html">Sobre-nos</a>
-                        <a class="btn btn-link" href="contact.html">Contacto</a>
-                        <a class="btn btn-link" href="booking.html">Reserva</a>
-                        <a class="btn btn-link" href="">Politicas de privacidade</a>
-                        <a class="btn btn-link" href="">Termos & Condiços</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contacto</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Polana caniço, Maputo, Moçambique</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+258) 84 30 14 014</p> 
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Para Vistos e reserva de Hotel <br>(+258) 84 30 14 014</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Aberto</h4>
-                        <h5 class="text-light fw-normal">Segunda - Sabado</h5>
-                        <p>07H - 20H</p>
-                        <h5 class="text-light fw-normal">Domingo</h5>
-                        <p>09H - 18H</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Fale conosco</h4>
-                        <p>Escreva-nos uma mensagem</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
-                    </div>
+             <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Eco-Travel"
+                    data-en="Eco-Travel">Eco-Travel</h4>
+                <a class="btn btn-link" href="about.html" data-pt="Sobre-nos" data-en="About Us">Sobre-nos</a>
+                <a class="btn btn-link" href="contact.html" data-pt="Contacto" data-en="Contact">Contacto</a>
+                <a class="btn btn-link" href="booking.html" data-pt="Reserva" data-en="Booking">Reserva</a>
+                <a class="btn btn-link" href="" data-pt="Políticas de privacidade" data-en="Privacy Policy">Políticas de privacidade</a>
+                <a class="btn btn-link" href="" data-pt="Termos & Condições" data-en="Terms & Conditions">Termos & Condições</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Contacto"
+                    data-en="Contact">Contacto</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><span data-pt="Polana caniço, Maputo, Moçambique" data-en="Polana Caniço, Maputo, Mozambique">Polana caniço, Maputo, Moçambique</span></p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+258) 84 30 14 014</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><span data-pt="Para Vistos e reserva de Hotel" data-en="For Visa and Hotel Booking">Para Vistos e reserva de Hotel</span><br>(+258) 84 30 14 014</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Eco-Travel</a>, Todos direitos reservados. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://lacerda02.github.io/webprotfolio/">Leonardo Luis Lacerda</a><br><br>
-                        
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="index.html">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Aberto"
+                    data-en="Opening Hours">Aberto</h4>
+                <h5 class="text-light fw-normal" data-pt="Segunda - Sábado" data-en="Monday - Saturday">Segunda - Sábado</h5>
+                <p>07H - 20H</p>
+                <h5 class="text-light fw-normal" data-pt="Domingo" data-en="Sunday">Domingo</h5>
+                <p>09H - 18H</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Fale conosco"
+                    data-en="Get in Touch">Fale conosco</h4>
+                <p data-pt="Escreva-nos uma mensagem" data-en="Write us a message">Escreva-nos uma mensagem</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-pt="Inscrever-se" data-en="SignUp">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Eco-Travel</a>, <span data-pt="Todos direitos reservados" data-en="All rights reserved">Todos direitos reservados</span>.
+                    Designed By <a class="border-bottom" href="https://lacerda02.github.io/webprotfolio/">Leonardo Luis Lacerda</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="index.html" data-pt="Home" data-en="Home">Home</a>
+                        <a href="" data-pt="Cookies" data-en="Cookies">Cookies</a>
+                        <a href="" data-pt="Ajuda" data-en="Help">Ajuda</a>
+                        <a href="" data-pt="Perguntas Frequentes" data-en="FQAs">Perguntas Frequentes</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         <!-- Footer End -->
 
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+      <script>
+    let currentLang = localStorage.getItem("lang") || "pt";
+
+function applyTranslations() {
+  document.querySelectorAll("[data-pt]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+  document.querySelector("#lang-toggle").textContent = currentLang === "pt" ? "EN" : "PT";
+}
+
+document.querySelector("#lang-toggle").addEventListener("click", () => {
+  currentLang = currentLang === "pt" ? "en" : "pt";
+  localStorage.setItem("lang", currentLang);
+  applyTranslations();
+});
+
+document.addEventListener("DOMContentLoaded", applyTranslations);
+
+  </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

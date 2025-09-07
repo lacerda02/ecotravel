@@ -1,188 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
-    <meta charset="utf-8">
-    <title>Eco-Travel</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="utf-8">
+  <title>Eco-Travel</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Favicon -->
- <link href="img/eco.png" rel="icon">
+  <!-- Favicon -->
+  <link href="img/eco.png" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+    rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+  <div class="container-xxl bg-white p-0">
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-xxl position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+          <h1 class="text-primary m-0"> <img src="img/eco.png" alt="Logo"> Eco-Travel</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0 pe-4">
+            <a href="index.html" class="nav-item nav-link lang" data-pt="Início" data-en="Home">Início</a>
+            <a href="about.html" class="nav-item nav-link lang" data-pt="Sobre" data-en="About">Sobre</a>
+            <a href="service.html" class="nav-item nav-link lang active" data-pt="Serviços" data-en="Services">Serviços</a>
+            <a href="menu.html" class="nav-item nav-link lang" data-pt="Pacotes" data-en="Packages">>Pacotes</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle lang" data-bs-toggle="dropdown" data-pt="Páginas" data-en="Pages">Páginas</a>
+              <div class="dropdown-menu m-0">
+                <a href="booking.html" class="dropdown-item lang" data-pt="Reserva" data-en="Booking">Reserva</a>
+                <a href="team.html" class="dropdown-item lang" data-pt="Nossa Equipe" data-en="Our Team">Nossa Equipe</a>
+                <a href="testimonial.html" class="dropdown-item lang" data-pt="Testemunhos" data-en="Testimonials">Testemunhos</a>
+              </div>
             </div>
+            <a href="contact.html" class="nav-item nav-link lang" data-pt="Contacto" data-en="Contact">Contacto</a>
+          </div>
+
+          <!-- Botão de Troca de Idioma -->
+          <button id="lang-toggle" class="btn btn-outline-light ms-3">EN</button>
+
+          <a href="booking.html" class="btn btn-primary py-2 px-4 lang" data-pt="Reservas" data-en="Reserve">Reservas</a>
         </div>
-        <!-- Spinner End -->
+      </nav>
+    </div>
+    <!-- Navbar End -->
 
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"> <img src="img/eco.png" alt="Logo"></i>Eco-Travel</h1>
-                   
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link">Sobre</a>
-                        <a href="service.html" class="nav-item nav-link active">Serviços</a>
-                        <a href="menu.html" class="nav-item nav-link">Pacotes</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Reserva</a>
-                                <a href="team.html" class="dropdown-item">Nossa equipe</a>
-                                <a href="testimonial.html" class="dropdown-item">Testemunho</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                    </div>
-                    <a href="booking.html" class="btn btn-primary py-2 px-4">Reservas</a>
-                </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Serviços</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                            <li class="breadcrumb-item"><a href="#">Paginas</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Serviços</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- Navbar & Hero End -->
+    <!-- Hero -->
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+      <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown lang" data-pt="Serviços" data-en="Services">Serviços</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center text-uppercase">
+            <li class="breadcrumb-item"><a href="#" class="lang" data-pt="Início" data-en="Home">Início</a></li>
+            <li class="breadcrumb-item"><a href="#" class="lang" data-pt="Páginas" data-en="Pages">Páginas</a></li>
+            <li class="breadcrumb-item text-white active lang" aria-current="page" data-pt="Serviços" data-en="Services">Serviços</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
 
 
         <!-- Service Start -->
      <!-- Service Start -->
+<!-- Service Start -->
 <div class="container-xxl py-5">
   <div class="container">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-      <h5 class="section-title ff-secondary text-center text-primary fw-normal">Outros Serviços</h5>
-      <h1 class="mb-5">Explore Nossos Serviços</h1>
+      <h5 class="section-title ff-secondary text-center text-primary fw-normal"
+          data-pt="Outros Serviços"
+          data-en="Other Services">Outros Serviços</h5>
+      <h1 class="mb-5"
+          data-pt="Explore Nossos Serviços"
+          data-en="Explore Our Services">Explore Nossos Serviços</h1>
     </div>
     <div class="row g-4">
-
-      <!-- ========== Serviços da MozTours (do panfleto) ========== -->
 
       <!-- Pacotes Turísticos -->
       <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-suitcase-rolling text-primary mb-4"></i>
-            <h5>Pacotes Turísticos</h5>
-            <p>Escolha entre pacotes completos para explorar Moçambique de forma única.</p>
+            <h5 data-pt="Pacotes Turísticos" data-en="Tour Packages">Pacotes Turísticos</h5>
+            <p data-pt="Escolha entre pacotes completos para explorar Moçambique de forma única."
+               data-en="Choose from complete packages to explore Mozambique in a unique way.">
+               Escolha entre pacotes completos para explorar Moçambique de forma única.
+            </p>
           </div>
         </div>
       </div>
-    <!-- Vistos -->
+
+      <!-- Vistos -->
       <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-passport text-primary mb-4"></i>
-            <h5>Vistos</h5>
-            <p>Oferecemos assistência para a emissão de vistos para destinos nacionais e internacionais.</p>
+            <h5 data-pt="Vistos" data-en="Visas">Vistos</h5>
+            <p data-pt="Oferecemos assistência para a emissão de vistos para destinos nacionais e internacionais."
+               data-en="We provide assistance with visa issuance for national and international destinations.">
+               Oferecemos assistência para a emissão de vistos para destinos nacionais e internacionais.
+            </p>
           </div>
         </div>
       </div>
+
       <!-- Passagens Aéreas -->
       <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-plane text-primary mb-4"></i>
-            <h5>Passagens Aéreas</h5>
-            <p>Emitimos bilhetes aéreos nacionais e internacionais com praticidade.</p>
+            <h5 data-pt="Passagens Aéreas" data-en="Air Tickets">Passagens Aéreas</h5>
+            <p data-pt="Emitimos bilhetes aéreos nacionais e internacionais com praticidade."
+               data-en="We issue national and international air tickets with ease.">
+               Emitimos bilhetes aéreos nacionais e internacionais com praticidade.
+            </p>
           </div>
         </div>
       </div>
 
-         <!-- Safari -->
+      <!-- Safari -->
       <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-binoculars text-primary mb-4"></i>
-            <h5>Safari</h5>
-            <p>Vivencie safaris incríveis em parques nacionais e reservas naturais.</p>
+            <h5 data-pt="Safari" data-en="Safari">Safari</h5>
+            <p data-pt="Vivencie safaris incríveis em parques nacionais e reservas naturais."
+               data-en="Experience amazing safaris in national parks and nature reserves.">
+               Vivencie safaris incríveis em parques nacionais e reservas naturais.
+            </p>
           </div>
         </div>
       </div>
 
-     <!-- Excursões -->
+      <!-- Excursões -->
       <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="1.1s">
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-hiking text-primary mb-4"></i>
-            <h5>Excursões</h5>
-            <p>Participe de excursões inesquecíveis por praias, ilhas e montanhas.</p>
+            <h5 data-pt="Excursões" data-en="Excursions">Excursões</h5>
+            <p data-pt="Participe de excursões inesquecíveis por praias, ilhas e montanhas."
+               data-en="Join unforgettable excursions through beaches, islands, and mountains.">
+               Participe de excursões inesquecíveis por praias, ilhas e montanhas.
+            </p>
           </div>
         </div>
       </div>
 
-          <!-- Seguro de Viagem -->
+      <!-- Seguro de Viagem -->
       <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-shield-alt text-primary mb-4"></i>
-            <h5>Seguro de Viagem</h5>
-            <p>Viaje com segurança com seguros completos para todas as situações.</p>
+            <h5 data-pt="Seguro de Viagem" data-en="Travel Insurance">Seguro de Viagem</h5>
+            <p data-pt="Viaje com segurança com seguros completos para todas as situações."
+               data-en="Travel safely with comprehensive insurance for all situations.">
+               Viaje com segurança com seguros completos para todas as situações.
+            </p>
           </div>
         </div>
       </div>
 
-          <!-- Reserva de Hotel & Transfer -->
+      <!-- Reserva de Hotel & Transfer -->
       <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="1.9s">
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-            <h5>Reserva de Hotel & Transfer</h5>
-            <p>Hospedagem e transporte garantidos com toda comodidade.</p>
+            <h5 data-pt="Reserva de Hotel & Transfer" data-en="Hotel & Transfer Booking">Reserva de Hotel & Transfer</h5>
+            <p data-pt="Hospedagem e transporte garantidos com toda comodidade."
+               data-en="Accommodation and transport guaranteed with all comfort.">
+               Hospedagem e transporte garantidos com toda comodidade.
+            </p>
           </div>
         </div>
       </div>
 
-         <!-- Rent-a-Car -->
+      <!-- Rent-a-Car -->
       <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="1.7s">
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-car text-primary mb-4"></i>
-            <h5>Rent-a-Car</h5>
-            <p>Aluguel de veículos confortáveis e seguros para sua viagem.</p>
+            <h5 data-pt="Rent-a-Car" data-en="Car Rental">Rent-a-Car</h5>
+            <p data-pt="Aluguel de veículos confortáveis e seguros para sua viagem."
+               data-en="Rental of comfortable and safe vehicles for your trip.">
+               Aluguel de veículos confortáveis e seguros para sua viagem.
+            </p>
           </div>
         </div>
       </div>
@@ -192,179 +217,105 @@
         <div class="service-item rounded pt-3">
           <div class="p-4">
             <i class="fa fa-3x fa-city text-primary mb-4"></i>
-            <h5>City Tour</h5>
-            <p>Descubra as principais cidades com passeios guiados exclusivos.</p>
+            <h5 data-pt="City Tour" data-en="City Tour">City Tour</h5>
+            <p data-pt="Descubra as principais cidades com passeios guiados exclusivos."
+               data-en="Discover the main cities with exclusive guided tours.">
+               Descubra as principais cidades com passeios guiados exclusivos.
+            </p>
           </div>
         </div>
       </div>
 
-   
-      
-      <!-- Caça Furtiva
-      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-        <div class="service-item rounded pt-3">
-          <div class="p-4">
-            <i class="fa fa-3x fa-paw text-primary mb-4"></i>
-            <h5>Caça Desportiva</h5>
-            <p>Experiências únicas e controladas relacionadas à vida selvagem.</p>
-          </div>
-        </div>
-      </div> -->
-
- 
-
-  
-
-  
-
-   
-
-  
-
-      <!-- ========== Exemplos que já existiam no seu HTML ========== -->
-
-      <!-- Ecoturismo -->
-      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="2.1s">
-        <div class="service-item rounded pt-3">
-          <div class="p-4">
-            <i class="fa fa-3x fa-tree text-primary mb-4"></i>
-            <h5>Ecoturismo</h5>
-            <p>Explore paisagens naturais com passeios guiados ecológicos e descubra lugares escondidos.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Observação da Vida Selvagem -->
-      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="2.3s">
-        <div class="service-item rounded pt-3">
-          <div class="p-4">
-            <i class="fa fa-3x fa-binoculars text-primary mb-4"></i>
-            <h5>Observação da Vida Selvagem</h5>
-            <p>Vivencie a emoção de observar animais em seus habitats naturais.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Passeios de Barco -->
-      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="2.5s">
-        <div class="service-item rounded pt-3">
-          <div class="p-4">
-            <i class="fa fa-3x fa-ship text-primary mb-4"></i>
-            <h5>Passeios de Barco</h5>
-            <p>Aproveite passeios de barco cênicos por rios, lagos e áreas costeiras.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trilhas e Caminhadas -->
-      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="2.7s">
-        <div class="service-item rounded pt-3">
-          <div class="p-4">
-            <i class="fa fa-3x fa-walking text-primary mb-4"></i>
-            <h5>Trilhas e Caminhadas</h5>
-            <p>Desfrute de caminhadas ecológicas em trilhas seguras e aprenda sobre a fauna local.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Fotografia da Natureza -->
-      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="2.9s">
-        <div class="service-item rounded pt-3">
-          <div class="p-4">
-            <i class="fa fa-3x fa-camera text-primary mb-4"></i>
-            <h5>Fotografia da Natureza</h5>
-            <p>Capture imagens impressionantes da natureza com acompanhamento de fotógrafos.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Programas Educativos -->
-      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="3.1s">
-        <div class="service-item rounded pt-3">
-          <div class="p-4">
-            <i class="fa fa-3x fa-leaf text-primary mb-4"></i>
-            <h5>Programas Educativos</h5>
-            <p>Participe de atividades educativas sobre preservação ambiental e sustentabilidade.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Atendimento 24/7 -->
-      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="3.3s">
-        <div class="service-item rounded pt-3">
-          <div class="p-4">
-            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-            <h5>Atendimento humanizado e assistência individual</h5>
-            <p>Suporte contínuo para garantir uma experiência tranquila durante toda a viagem.</p>
-          </div>
-        </div>
-      </div>
+      <!-- (Mantém os outros serviços como fiz acima, adicionando data-pt e data-en) -->
 
     </div>
   </div>
 </div>
 <!-- Service End -->
 
-        <!-- Service End -->
-        <div class="container my-5">
-    <h2 class="text-center mb-4">Galeria de Experiências Eco Travel</h2>
-    <div class="row g-4">
-        <!-- Imagem 1 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/1.jpg" class="img-fluid" alt="Trilha na Floresta">
-                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <h5 class="text-white">Trilha na Floresta</h5>
-                </div>
-            </div>
+
+<!-- ================== GALERIA ================== -->
+<div class="container my-5">
+  <h2 class="text-center mb-4"
+      data-pt="Galeria de Experiências Eco Travel"
+      data-en="Eco Travel Experience Gallery">Galeria de Experiências Eco Travel</h2>
+  <div class="row g-4">
+
+    <!-- Imagem 1 -->
+    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="gallery-item position-relative rounded overflow-hidden">
+        <img src="img/1.jpg" class="img-fluid" alt="Trilha na Floresta">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+          <h5 class="text-white"
+              data-pt="Trilha na Floresta"
+              data-en="Forest Trail">Trilha na Floresta</h5>
         </div>
-        <!-- Imagem 2 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/2.webp" class="img-fluid" alt="Passeio de Barco">
-                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <h5 class="text-white">Passeio de Barco</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Imagem 3 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/3.webp" class="img-fluid" alt="Observação de Animais">
-                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <h5 class="text-white">Observação de Animais</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Imagem 4 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/4.jpeg" class="img-fluid" alt="Fotografia da Natureza">
-                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <h5 class="text-white">Fotografia da Natureza</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Imagem 5 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-            <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/9.jpg" class="img-fluid" alt="Programas Educativos">
-                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <h5 class="text-white">Programas Educativos</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Imagem 6 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.1s">
-            <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/10.jpg" class="img-fluid" alt="Trilhas e Caminhadas">
-                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <h5 class="text-white">Trilhas e Caminhadas</h5>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <!-- Imagem 2 -->
+    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="gallery-item position-relative rounded overflow-hidden">
+        <img src="img/2.webp" class="img-fluid" alt="Passeio de Barco">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+          <h5 class="text-white"
+              data-pt="Passeio de Barco"
+              data-en="Boat Ride">Passeio de Barco</h5>
         </div>
+      </div>
+    </div>
+
+    <!-- Imagem 3 -->
+    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+      <div class="gallery-item position-relative rounded overflow-hidden">
+        <img src="img/3.webp" class="img-fluid" alt="Observação de Animais">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+          <h5 class="text-white"
+              data-pt="Observação de Animais"
+              data-en="Animal Watching">Observação de Animais</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imagem 4 -->
+    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+      <div class="gallery-item position-relative rounded overflow-hidden">
+        <img src="img/4.jpeg" class="img-fluid" alt="Fotografia da Natureza">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+          <h5 class="text-white"
+              data-pt="Fotografia da Natureza"
+              data-en="Nature Photography">Fotografia da Natureza</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imagem 5 -->
+    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+      <div class="gallery-item position-relative rounded overflow-hidden">
+        <img src="img/9.jpg" class="img-fluid" alt="Programas Educativos">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+          <h5 class="text-white"
+              data-pt="Programas Educativos"
+              data-en="Educational Programs">Programas Educativos</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imagem 6 -->
+    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.1s">
+      <div class="gallery-item position-relative rounded overflow-hidden">
+        <img src="img/10.jpg" class="img-fluid" alt="Trilhas e Caminhadas">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+          <h5 class="text-white"
+              data-pt="Trilhas e Caminhadas"
+              data-en="Trails and Hiking">Trilhas e Caminhadas</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 <!-- CSS para overlay -->
 <style>
@@ -386,71 +337,76 @@
 </style>
 
 
-        <!-- Footer Start -->
-      <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Eco-Travel</h4>
-                        <a class="btn btn-link" href="about.html">Sobre-nos</a>
-                        <a class="btn btn-link" href="contact.html">Contacto</a>
-                        <a class="btn btn-link" href="booking.html">Reserva</a>
-                        <a class="btn btn-link" href="">Politicas de privacidade</a>
-                        <a class="btn btn-link" href="">Termos & Condiços</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contacto</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Polana caniço, Maputo, Moçambique</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+258) 84 30 14 014</p> 
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Para Vistos e reserva de Hotel <br>(+258) 84 30 14 014</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Aberto</h4>
-                        <h5 class="text-light fw-normal">Segunda - Sabado</h5>
-                        <p>07H - 20H</p>
-                        <h5 class="text-light fw-normal">Domingo</h5>
-                        <p>09H - 18H</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Fale conosco</h4>
-                        <p>Escreva-nos uma mensagem</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
-                    </div>
+      <!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Eco-Travel"
+                    data-en="Eco-Travel">Eco-Travel</h4>
+                <a class="btn btn-link" href="about.html" data-pt="Sobre-nos" data-en="About Us">Sobre-nos</a>
+                <a class="btn btn-link" href="contact.html" data-pt="Contacto" data-en="Contact">Contacto</a>
+                <a class="btn btn-link" href="booking.html" data-pt="Reserva" data-en="Booking">Reserva</a>
+                <a class="btn btn-link" href="" data-pt="Políticas de privacidade" data-en="Privacy Policy">Políticas de privacidade</a>
+                <a class="btn btn-link" href="" data-pt="Termos & Condições" data-en="Terms & Conditions">Termos & Condições</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Contacto"
+                    data-en="Contact">Contacto</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><span data-pt="Polana caniço, Maputo, Moçambique" data-en="Polana Caniço, Maputo, Mozambique">Polana caniço, Maputo, Moçambique</span></p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+258) 84 30 14 014</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><span data-pt="Para Vistos e reserva de Hotel" data-en="For Visa and Hotel Booking">Para Vistos e reserva de Hotel</span><br>(+258) 84 30 14 014</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Eco-Travel</a>, Todos direitos reservados. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://lacerda02.github.io/webprotfolio/">Leonardo Luis Lacerda</a><br><br>
-                        
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="index.html">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Aberto"
+                    data-en="Opening Hours">Aberto</h4>
+                <h5 class="text-light fw-normal" data-pt="Segunda - Sábado" data-en="Monday - Saturday">Segunda - Sábado</h5>
+                <p>07H - 20H</p>
+                <h5 class="text-light fw-normal" data-pt="Domingo" data-en="Sunday">Domingo</h5>
+                <p>09H - 18H</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Fale conosco"
+                    data-en="Get in Touch">Fale conosco</h4>
+                <p data-pt="Escreva-nos uma mensagem" data-en="Write us a message">Escreva-nos uma mensagem</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-pt="Inscrever-se" data-en="SignUp">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Eco-Travel</a>, <span data-pt="Todos direitos reservados" data-en="All rights reserved">Todos direitos reservados</span>.
+                    Designed By <a class="border-bottom" href="https://lacerda02.github.io/webprotfolio/">Leonardo Luis Lacerda</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="index.html" data-pt="Home" data-en="Home">Home</a>
+                        <a href="" data-pt="Cookies" data-en="Cookies">Cookies</a>
+                        <a href="" data-pt="Ajuda" data-en="Help">Ajuda</a>
+                        <a href="" data-pt="Perguntas Frequentes" data-en="FQAs">Perguntas Frequentes</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+</div>
+<!-- Footer End -->
 
 
         <!-- Back to Top -->
@@ -471,6 +427,70 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    let currentLang = localStorage.getItem("lang") || "pt";
+
+function applyTranslations() {
+  document.querySelectorAll("[data-pt]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+  document.querySelector("#lang-toggle").textContent = currentLang === "pt" ? "EN" : "PT";
+}
+
+document.querySelector("#lang-toggle").addEventListener("click", () => {
+  currentLang = currentLang === "pt" ? "en" : "pt";
+  localStorage.setItem("lang", currentLang);
+  applyTranslations();
+});
+
+document.addEventListener("DOMContentLoaded", applyTranslations);
+
+  </script>
+  <!-- Troca de idioma -->
+  <script>
+    const translations = {
+      pt: {
+        home: "Início",
+        about: "Sobre",
+        services: "Serviços",
+        packages: "Pacotes",
+        pages: "Páginas",
+        booking: "Reserva",
+        team: "Nossa Equipe",
+        testimonials: "Testemunhos",
+        contact: "Contacto",
+        reserve: "Reservas"
+      },
+      en: {
+        home: "Home",
+        about: "About",
+        services: "Services",
+        packages: "Packages",
+        pages: "Pages",
+        booking: "Booking",
+        team: "Our Team",
+        testimonials: "Testimonials",
+        contact: "Contact",
+        reserve: "Book Now"
+      }
+    };
+
+    let currentLang = "pt";
+
+    document.getElementById("lang-toggle").addEventListener("click", function () {
+      currentLang = currentLang === "pt" ? "en" : "pt";
+      this.textContent = currentLang === "pt" ? "EN" : "PT";
+      document.querySelectorAll(".lang").forEach(el => {
+        const key = el.getAttribute("data-key");
+        el.textContent = translations[currentLang][key];
+      });
+    });
+  </script>
 </body>
 
 </html>

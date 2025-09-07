@@ -44,157 +44,159 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-              <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"> <img src="img/eco.png" alt="Logo"></i>Eco-Travel</h1>
-                   
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link">Sobre</a>
-                        <a href="service.html" class="nav-item nav-link">Serviços</a>
-                        <a href="menu.html" class="nav-item nav-link">Pacotes</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Paginas</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item active">Reserva</a>
-                                <a href="team.html" class="dropdown-item">Nossa equipe</a>
-                                <a href="testimonial.html" class="dropdown-item">Testemunho</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+      <div class="container-xxl position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"> <img src="img/eco.png" alt="Logo">Eco-Travel</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="index.html" class="nav-item nav-link" data-pt="Inicio" data-en="Home">Inicio</a>
+                <a href="about.html" class="nav-item nav-link" data-pt="Sobre" data-en="About">Sobre</a>
+                <a href="service.html" class="nav-item nav-link" data-pt="Serviços" data-en="Services">Serviços</a>
+                <a href="menu.html" class="nav-item nav-link" data-pt="Pacotes" data-en="Packages">Pacotes</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" data-pt="Paginas" data-en="Pages">Paginas</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="booking.html" class="dropdown-item active" data-pt="Reserva" data-en="Booking">Reserva</a>
+                        <a href="team.html" class="dropdown-item" data-pt="Nossa equipe" data-en="Our Team">Nossa equipe</a>
+                        <a href="testimonial.html" class="dropdown-item" data-pt="Testemunho" data-en="Testimonials">Testemunho</a>
                     </div>
-                    <a href="booking.html" class="btn btn-primary py-2 px-4">Reservas</a>
                 </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Reserva</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                            <li class="breadcrumb-item"><a href="#">Paginas</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Reserva</li>
-                        </ol>
-                    </nav>
-                </div>
+                <a href="contact.html" class="nav-item nav-link" data-pt="Contacto" data-en="Contact">Contacto</a>
             </div>
+                   <button id="lang-toggle" class="btn btn-outline-light ms-3">EN</button>
+            <a href="booking.html" class="btn btn-primary py-2 px-4" data-pt="Reservas" data-en="Bookings">Reservas</a>
         </div>
+    </nav>
+
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown" data-pt="Reserva" data-en="Booking">Reserva</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="#" data-pt="Inicio" data-en="Home">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="#" data-pt="Paginas" data-en="Pages">Paginas</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page" data-pt="Reserva" data-en="Booking">Reserva</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
         <!-- Navbar & Hero End -->
 
-<h2 class="justify-content-center">Formlario de reserva</h2>
-        <!-- Reservation Start -->
-       <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+<h2 class="justify-content-center" data-pt="Formulário de reserva" data-en="Booking Form">Formlario de reserva</h2>
+<!-- Reservation Start -->
+<div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
   <form id="formReserva" class="bg-white p-md-5 p-4 mb-5 border rounded shadow-sm">
 
-  <!-- Dados Pessoais -->
-  <div class="row">
-    <div class="col-md-6 form-group">
-      <label for="name" class="text-black font-weight-bold">Nome</label>
-      <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome completo" required>
+    <!-- Dados Pessoais -->
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="name" class="text-black font-weight-bold" data-pt="Nome" data-en="Name">Nome</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome completo" data-pt-placeholder="Seu nome completo" data-en-placeholder="Full Name" required>
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="phone" class="text-black font-weight-bold" data-pt="Telefone" data-en="Phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" class="form-control" placeholder="+258 ..." data-pt-placeholder="+258 ..." data-en-placeholder="+258 ..." required>
+      </div>
     </div>
-    <div class="col-md-6 form-group">
-      <label for="phone" class="text-black font-weight-bold">Telefone</label>
-      <input type="tel" id="phone" name="phone" class="form-control" placeholder="+258 ..." required>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12 form-group">
-      <label for="email" class="text-black font-weight-bold">Email</label>
-      <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" required>
+    <div class="row">
+      <div class="col-md-12 form-group">
+        <label for="email" class="text-black font-weight-bold" data-pt="Email" data-en="Email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" data-pt-placeholder="exemplo@email.com" data-en-placeholder="example@email.com" required>
+      </div>
     </div>
-  </div>
 
-  <!-- Destino -->
-  <div class="row">
-    <div class="col-md-12 form-group">
-      <label for="destination" class="text-black font-weight-bold">Destino</label>
-      <select id="destination" name="destination" class="form-control" required>
-        <option value="">Selecione o destino</option>
-        <option value="Ilha de Moçambique">Ilha de Moçambique</option>
-        <option value="Parque Nacional da Gorongosa">Parque Nacional da Gorongosa</option>
-        <option value="Vilankulo">Vilankulo</option>
-        <option value="Arquipélago de Bazaruto">Arquipélago de Bazaruto</option>
-        <option value="Ilha da Inhaca">Ilha da Inhaca</option>
-        <option value="Ponta do Ouro">Ponta do Ouro</option>
-        <option value="Parque Nacional de Limpopo">Parque Nacional de Limpopo</option>
-        <option value="Parque Nacional do Gilé">Parque Nacional do Gilé</option>
-        <option value="Parque Nacional de Zinave">Parque Nacional de Zinave</option>
-        <option value="Parque Nacional de Banhine">Parque Nacional de Banhine</option>
-        <option value="Parque Nacional de Chimanimane">Parque Nacional de Chimanimane</option>
-        <option value="Parque Nacional de Maputo">Parque Nacional de Maputo</option>
-        <option value="Parque Nacional de Magué">Parque Nacional de Magué</option>
-        <option value="Parque Nacional de Quirimbas">Parque Nacional de Quirimbas</option>
-        <option value="Reserva Nacional de Pomene">Reserva Nacional de Pomene</option>
-        <option value="Reserva Nacional de Marrumeu">Reserva Nacional de Marrumeu</option>
-        <option value="Reserva Especial de Niassa">Reserva Especial de Niassa</option>
-        <option value="Outro (a combinar)">Outro (a combinar)</option>
-      </select>
+    <!-- Destino -->
+    <div class="row">
+      <div class="col-md-12 form-group">
+        <label for="destination" class="text-black font-weight-bold" data-pt="Destino" data-en="Destination">Destino</label>
+        <select id="destination" name="destination" class="form-control" required>
+          <option value="" data-pt="Selecione o destino" data-en="Select Destination">Selecione o destino</option>
+          <option value="Ilha de Moçambique">Ilha de Moçambique</option>
+          <option value="Parque Nacional da Gorongosa">Parque Nacional da Gorongosa</option>
+          <option value="Vilankulo">Vilankulo</option>
+          <option value="Arquipélago de Bazaruto">Arquipélago de Bazaruto</option>
+          <option value="Ilha da Inhaca">Ilha da Inhaca</option>
+          <option value="Ponta do Ouro">Ponta do Ouro</option>
+          <option value="Parque Nacional de Limpopo">Parque Nacional de Limpopo</option>
+          <option value="Parque Nacional do Gilé">Parque Nacional do Gilé</option>
+          <option value="Parque Nacional de Zinave">Parque Nacional de Zinave</option>
+          <option value="Parque Nacional de Banhine">Parque Nacional de Banhine</option>
+          <option value="Parque Nacional de Chimanimane">Parque Nacional de Chimanimane</option>
+          <option value="Parque Nacional de Maputo">Parque Nacional de Maputo</option>
+          <option value="Parque Nacional de Magué">Parque Nacional de Magué</option>
+          <option value="Parque Nacional de Quirimbas">Parque Nacional de Quirimbas</option>
+          <option value="Reserva Nacional de Pomene">Reserva Nacional de Pomene</option>
+          <option value="Reserva Nacional de Marrumeu">Reserva Nacional de Marrumeu</option>
+          <option value="Reserva Especial de Niassa">Reserva Especial de Niassa</option>
+          <option value="Outro (a combinar)" data-pt="Outro (a combinar)" data-en="Other (to arrange)">Outro (a combinar)</option>
+        </select>
+      </div>
     </div>
-  </div>
 
-  <!-- Datas -->
-  <div class="row">
-    <div class="col-md-6 form-group">
-      <label for="checkin_date" class="text-black font-weight-bold">Data Check-In</label>
-      <input type="date" id="checkin_date" name="checkin_date" class="form-control" required>
+    <!-- Datas -->
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="checkin_date" class="text-black font-weight-bold" data-pt="Data Check-In" data-en="Check-In Date">Data Check-In</label>
+        <input type="date" id="checkin_date" name="checkin_date" class="form-control" required>
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="checkout_date" class="text-black font-weight-bold" data-pt="Data Check-Out" data-en="Check-Out Date">Data Check-Out</label>
+        <input type="date" id="checkout_date" name="checkout_date" class="form-control" required>
+      </div>
     </div>
-    <div class="col-md-6 form-group">
-      <label for="checkout_date" class="text-black font-weight-bold">Data Check-Out</label>
-      <input type="date" id="checkout_date" name="checkout_date" class="form-control" required>
-    </div>
-  </div>
 
-  <!-- Adultos e Crianças -->
-  <div class="row">
-    <div class="col-md-6 form-group">
-      <label for="adults" class="text-black font-weight-bold">Adultos</label>
-      <select id="adults" name="adults" class="form-control" required>
-        <option value="">Selecione</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4+">4+</option>
-      </select>
+    <!-- Adultos e Crianças -->
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="adults" class="text-black font-weight-bold" data-pt="Adultos" data-en="Adults">Adultos</label>
+        <select id="adults" name="adults" class="form-control" required>
+          <option value="" data-pt="Selecione" data-en="Select">Selecione</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4+">4+</option>
+        </select>
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="children" class="text-black font-weight-bold" data-pt="Crianças" data-en="Children">Crianças</label>
+        <select id="children" name="children" class="form-control">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4+">4+</option>
+        </select>
+      </div>
     </div>
-    <div class="col-md-6 form-group">
-      <label for="children" class="text-black font-weight-bold">Crianças</label>
-      <select id="children" name="children" class="form-control">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4+">4+</option>
-      </select>
-    </div>
-  </div>
 
-  <!-- Notas adicionais -->
-  <div class="row mb-4">
-    <div class="col-md-12 form-group">
-      <label for="message" class="text-black font-weight-bold">Notas adicionais</label>
-      <textarea name="message" id="message" class="form-control" cols="30" rows="5" placeholder="Observações importantes"></textarea>
+    <!-- Notas adicionais -->
+    <div class="row mb-4">
+      <div class="col-md-12 form-group">
+        <label for="message" class="text-black font-weight-bold" data-pt="Notas adicionais" data-en="Additional Notes">Notas adicionais</label>
+        <textarea name="message" id="message" class="form-control" cols="30" rows="5" placeholder="Observações importantes" data-pt-placeholder="Observações importantes" data-en-placeholder="Important notes"></textarea>
+      </div>
     </div>
-  </div>
 
-  <!-- Botão -->
-  <div class="row">
-    <div class="col-md-6 form-group">
-      <button type="submit" class="btn btn-primary text-white py-3 px-5 font-weight-bold w-100">
-        Reservar
-      </button>
+    <!-- Botão -->
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <button type="submit" class="btn btn-primary text-white py-3 px-5 font-weight-bold w-100" data-pt="Reservar" data-en="Book Now">
+          Reservar
+        </button>
+      </div>
     </div>
-  </div>
 
-</form>
+  </form>
 </div>
+
 
 
        
@@ -202,69 +204,74 @@
         
 
         <!-- Footer Start -->
-       <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Eco-Travel</h4>
-                        <a class="btn btn-link" href="about.html">Sobre-nos</a>
-                        <a class="btn btn-link" href="contact.html">Contacto</a>
-                        <a class="btn btn-link" href="booking.html">Reserva</a>
-                        <a class="btn btn-link" href="">Politicas de privacidade</a>
-                        <a class="btn btn-link" href="">Termos & Condiços</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contacto</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Polana caniço, Maputo, Moçambique</p>
-                          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+258) 84 30 14 014</p> 
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Para Vistos e reserva de Hotel <br>(+258) 84 30 14 014</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Aberto</h4>
-                        <h5 class="text-light fw-normal">Segunda - Sabado</h5>
-                        <p>07H - 20H</p>
-                        <h5 class="text-light fw-normal">Domingo</h5>
-                        <p>09H - 18H</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Fale conosco</h4>
-                        <p>Escreva-nos uma mensagem</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
-                    </div>
+           <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Eco-Travel"
+                    data-en="Eco-Travel">Eco-Travel</h4>
+                <a class="btn btn-link" href="about.html" data-pt="Sobre-nos" data-en="About Us">Sobre-nos</a>
+                <a class="btn btn-link" href="contact.html" data-pt="Contacto" data-en="Contact">Contacto</a>
+                <a class="btn btn-link" href="booking.html" data-pt="Reserva" data-en="Booking">Reserva</a>
+                <a class="btn btn-link" href="" data-pt="Políticas de privacidade" data-en="Privacy Policy">Políticas de privacidade</a>
+                <a class="btn btn-link" href="" data-pt="Termos & Condições" data-en="Terms & Conditions">Termos & Condições</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Contacto"
+                    data-en="Contact">Contacto</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><span data-pt="Polana caniço, Maputo, Moçambique" data-en="Polana Caniço, Maputo, Mozambique">Polana caniço, Maputo, Moçambique</span></p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+258) 84 30 14 014</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><span data-pt="Para Vistos e reserva de Hotel" data-en="For Visa and Hotel Booking">Para Vistos e reserva de Hotel</span><br>(+258) 84 30 14 014</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Eco-Travel</a>, Todos direitos reservados. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://lacerda02.github.io/webprotfolio/">Leonardo Luis Lacerda</a><br><br>
-                        
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="index.html">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Aberto"
+                    data-en="Opening Hours">Aberto</h4>
+                <h5 class="text-light fw-normal" data-pt="Segunda - Sábado" data-en="Monday - Saturday">Segunda - Sábado</h5>
+                <p>07H - 20H</p>
+                <h5 class="text-light fw-normal" data-pt="Domingo" data-en="Sunday">Domingo</h5>
+                <p>09H - 18H</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
+                    data-pt="Fale conosco"
+                    data-en="Get in Touch">Fale conosco</h4>
+                <p data-pt="Escreva-nos uma mensagem" data-en="Write us a message">Escreva-nos uma mensagem</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-pt="Inscrever-se" data-en="SignUp">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Eco-Travel</a>, <span data-pt="Todos direitos reservados" data-en="All rights reserved">Todos direitos reservados</span>.
+                    Designed By <a class="border-bottom" href="https://lacerda02.github.io/webprotfolio/">Leonardo Luis Lacerda</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="index.html" data-pt="Home" data-en="Home">Home</a>
+                        <a href="" data-pt="Cookies" data-en="Cookies">Cookies</a>
+                        <a href="" data-pt="Ajuda" data-en="Help">Ajuda</a>
+                        <a href="" data-pt="Perguntas Frequentes" data-en="FQAs">Perguntas Frequentes</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         <!-- Footer End -->
 
 
@@ -286,6 +293,25 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+          <script>
+    let currentLang = localStorage.getItem("lang") || "pt";
+
+function applyTranslations() {
+  document.querySelectorAll("[data-pt]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+  document.querySelector("#lang-toggle").textContent = currentLang === "pt" ? "EN" : "PT";
+}
+
+document.querySelector("#lang-toggle").addEventListener("click", () => {
+  currentLang = currentLang === "pt" ? "en" : "pt";
+  localStorage.setItem("lang", currentLang);
+  applyTranslations();
+});
+
+document.addEventListener("DOMContentLoaded", applyTranslations);
+
+  </script>
 </body>
 
 </html>
