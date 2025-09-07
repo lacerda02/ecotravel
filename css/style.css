@@ -153,15 +153,36 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /*** Hero Header ***/
 .hero-header {
-    min-height: 600px; /* ou altura que desejar */
-    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('../img/11.jpg');
+    min-height: 600px; /* altura desejada */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* animação */
+    animation: bgSlide 20s infinite ease-in-out;
 }
+
+/* Definir a troca das imagens */
+@keyframes bgSlide {
+    0% {
+        background-image: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('../img/11.jpg');
+    }
+    25% {
+        background-image: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('../img/slide1.jpg');
+    }
+    50% {
+        background-image: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('../img/slide2.JPG');
+    }
+    75% {
+        background-image: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('../img/slide3.JPG');
+    }
+    100% {
+        background-image: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('../img/slide4.JPG');
+    }
+}
+
 
 
 .hero-header img {

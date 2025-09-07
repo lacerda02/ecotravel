@@ -50,12 +50,13 @@
         <a href="" class="navbar-brand p-0">
             <h1 class="text-primary m-0">
                 <img src="img/eco.png" alt="Logo">Eco-Travel <br>
-                <span data-pt="WORLDWIDE" data-en="WORLDWIDE">WORLDWIDE</span>
+                
             </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
+          <button id="lang-toggle" class="btn btn-outline-light ms-3">EN</button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 pe-4">
                 <a href="index.html" class="nav-item nav-link active" data-pt="Início" data-en="Home">Início</a>
@@ -73,7 +74,7 @@
                 <a href="contact.html" class="nav-item nav-link" data-pt="Contacto" data-en="Contact">Contacto</a>
             </div>
              <!-- Botão de Troca de Idioma -->
-          <button id="lang-toggle" class="btn btn-outline-light ms-3">EN</button>
+        
             <a href="booking.html" class="btn btn-primary py-2 px-4" data-pt="Reservas" data-en="Reserve">Reservas</a>
         </div>
     </nav>
@@ -83,14 +84,14 @@
 <div class="container-xxl py-5 bg-dark hero-header mb-5">
     <div class="container h-100 d-flex justify-content-center align-items-center">
         <div class="text-center" style="margin-top: 150px;">
-            <h2 class="text-white animated slideInLeft" style="font-size: 2rem; line-height: 1.4;" 
+            <h2 class="text-white animated slideInLeft" style="font-size: 1.5rem; line-height: 1.4;" 
                 data-pt="Liberte o espírito selvagem da Mãe África que habita em si e reconecte-se com a natureza e a aventura!" 
                 data-en="Unleash the wild spirit of Mother Africa within you and reconnect with nature and adventure!">
                 Liberte o espírito selvagem da Mãe África que habita em si e reconecte-se com a natureza e a aventura!
             </h2>
             <p class="text-white animated slideInLeft mb-4 pb-2" style="font-size: 1.2rem;" 
-                data-pt="O melhor de todos" data-en="The best of all">
-                O melhor de todos
+                data-pt="Excursões e Turismo" data-en="SavanaTour">
+               
             </p>
         <a href="#formReserva" class="btn btn-primary py-sm-3 px-sm-5 animated slideInLeft" 
    data-pt="Faça a reserva agora" data-en="Book now">
@@ -219,74 +220,86 @@
     </section>
 
         <!-- Service Start -->
-      <div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="section-title ff-secondary text-center text-primary fw-normal" 
-                data-pt="Outros Serviços" 
-                data-en="Other Services">Outros Serviços</h5>
-            <h1 class="mb-5" data-pt="Explore Nossos Serviços" data-en="Explore Our Services">
-                Explore Nossos Serviços
-            </h1>
+<!-- Hero Slider -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active" data-bs-interval="3000">
+      <div class="hero-header d-flex align-items-center justify-content-center text-center"
+           style="background: linear-gradient(rgba(15,23,43,.7), rgba(15,23,43,.7)), url('img/11.jpg') center/cover no-repeat; height: 100vh;">
+        <div class="container">
+          <h5 class="display-5 text-white animated slideInDown"
+              data-pt=" Excursão Programada - Ilha de Moçambique "
+              data-en="News 1: Tourism in Mozambique grows in 2025">
+             Excursão Programada - Ilha de Moçambique
+          </h5>
+          <p class="text-white mb-4" 
+             data-pt="O setor do turismo registou um aumento significativo no número de visitantes."
+             data-en="The tourism sector recorded a significant increase in visitors.">
+             O setor do turismo registou um aumento significativo no número de visitantes.
+          </p>
+          <a href="#" class="btn btn-primary px-4 py-2"
+             data-pt="Ver intinerario" data-en="Read more">Ver intinerario</a>
         </div>
-        <div class="row g-4">
-            <!-- Serviço 1 -->
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-hiking text-primary mb-4"></i>
-                        <h5 data-pt="Ecoturismo" data-en="Ecotourism">Ecoturismo</h5>
-                        <p data-pt="Explore paisagens naturais com passeios guiados ecológicos e descubra lugares escondidos."
-                           data-en="Explore natural landscapes with eco-guided tours and discover hidden places.">
-                           Explore paisagens naturais com passeios guiados ecológicos e descubra lugares escondidos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Serviço 2 -->
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item rounded pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-binoculars text-primary mb-4"></i>
-                        <h5 data-pt="Observação da Vida Selvagem" data-en="Wildlife Watching">
-                            Observação da Vida Selvagem
-                        </h5>
-                        <p data-pt="Vivencie a emoção de observar animais em seus habitats naturais de forma segura e responsável."
-                           data-en="Experience the thrill of observing animals in their natural habitats safely and responsibly.">
-                            Vivencie a emoção de observar animais em seus habitats naturais de forma segura e responsável.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Serviço 3 -->
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item rounded pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-ship text-primary mb-4"></i>
-                        <h5 data-pt="Passeios de Barco" data-en="Boat Tours">Passeios de Barco</h5>
-                        <p data-pt="Aproveite passeios de barco cênicos por rios, lagos e áreas costeiras com guias experientes."
-                           data-en="Enjoy scenic boat tours along rivers, lakes, and coastal areas with experienced guides.">
-                           Aproveite passeios de barco cênicos por rios, lagos e áreas costeiras com guias experientes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Serviço 4 -->
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="service-item rounded pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-tree text-primary mb-4"></i>
-                        <h5 data-pt="Trilhas e Caminhadas" data-en="Trails & Hikes">Trilhas e Caminhadas</h5>
-                        <p data-pt="Desfrute de caminhadas ecológicas em trilhas seguras e aprenda sobre a flora e fauna locais."
-                           data-en="Enjoy eco-friendly hikes on safe trails and learn about local flora and fauna.">
-                           Desfrute de caminhadas ecológicas em trilhas seguras e aprenda sobre a flora e fauna locais.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item" data-bs-interval="3000">
+      <div class="hero-header d-flex align-items-center justify-content-center text-center"
+           style="background: linear-gradient(rgba(15,23,43,.7), rgba(15,23,43,.7)), url('img/12.jpg') center/cover no-repeat; height: 100vh;">
+        <div class="container">
+          <h5 class="display-5 text-white animated slideInDown"
+              data-pt="  Excursão Programada - Parque do Gorongosa"
+              data-en="News 2: New travel packages available">
+            Excursão Programada - Parque do Gorongosa
+          </h5>
+          <p class="text-white mb-4" 
+             data-pt="As agências oferecem experiências únicas em safaris e praias."
+             data-en="Agencies offer unique experiences in safaris and beaches.">
+             As agências oferecem experiências únicas em safaris e praias.
+          </p>
+          <a href="#" class="btn btn-primary px-4 py-2"
+             data-pt="Ver intinerario" data-en="Explore">Ver intinerario</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item" data-bs-interval="3000">
+      <div class="hero-header d-flex align-items-center justify-content-center text-center"
+           style="background: linear-gradient(rgba(15,23,43,.7), rgba(15,23,43,.7)), url('img/13.jpg') center/cover no-repeat; height: 100vh;">
+        <div class="container">
+          <h5 class="display-5 text-white animated slideInDown"
+              data-pt=" Excursão Programada - Parque nacional de Limpopo"
+              data-en="News 3: Wildlife preservation">
+               Excursão Programada - Parque nacional de Limpopo
+          </h5>
+          <p class="text-white mb-4" 
+             data-pt="Novos programas de conservação foram lançados para proteger espécies em risco."
+             data-en="New conservation programs were launched to protect endangered species.">
+             Novos programas de conservação foram lançados para proteger espécies em risco.
+          </p>
+          <a href="#" class="btn btn-primary px-4 py-2"
+             data-pt="Ver intinerario" data-en="Learn more">Ver intinerario</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 </div>
+
+
+
 
         <!-- Service End -->
 
