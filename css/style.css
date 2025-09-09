@@ -185,6 +185,47 @@ html {
 }
 
 
+/* ======= Partner logos styles (add to style.css) ======= */
+.partner-logo {
+  width: 100px;              /* tamanho uniforme */
+  height: 100px;
+  object-fit: contain;       /* preserva proporção do logo */
+  border-radius: 50%;        /* circular */
+  border: 3px solid rgba(13,110,253,0.12); /* borda suave */
+  padding: 12px;             /* espaço interno para logotipos com fundo */
+  background: #fff;          /* fundo branco para logos transparentes (ajusta se necessário) */
+  box-shadow: 0 6px 18px rgba(11, 64, 120, 0.06);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+/* hover levezinho */
+.partner-logo:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(11, 64, 120, 0.12);
+}
+
+/* responsividade: logos ficam menores em telas pequenas */
+@media (max-width: 768px) {
+  .partner-logo {
+    width: 72px;
+    height: 72px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-logo {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+  }
+}
+
+/* opcional: centralizar indicadores sob o carousel */
+.carousel-indicators {
+  justify-content: center;
+}
+
 .itinerario {
   padding: 60px 20px;
   background: #fff;
