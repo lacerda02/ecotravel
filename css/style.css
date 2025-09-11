@@ -187,16 +187,18 @@ html {
 
 /* ======= Partner logos styles (add to style.css) ======= */
 .partner-logo {
-  width: 100px;              /* tamanho uniforme */
-  height: 100px;
-  object-fit: contain;       /* preserva proporção do logo */
-  border-radius: 50%;        /* circular */
-  border: 3px solid rgba(13,110,253,0.12); /* borda suave */
-  padding: 12px;             /* espaço interno para logotipos com fundo */
-  background: #fff;          /* fundo branco para logos transparentes (ajusta se necessário) */
-  box-shadow: 0 6px 18px rgba(11, 64, 120, 0.06);
-  transition: transform .35s ease, box-shadow .35s ease;
+  width: 150px;   /* aumenta o tamanho da largura */
+  height: 150px;  /* aumenta o tamanho da altura */
+  object-fit: cover; /* garante que a imagem não deforma */
+  border-radius: 50%; /* deixa circular */
+  border: 3px solid #ddd; /* borda opcional */
+  transition: transform 0.3s ease-in-out;
 }
+
+.partner-logo:hover {
+  transform: scale(1.1); /* efeito de zoom ao passar o rato */
+}
+
 
 /* hover levezinho */
 .partner-logo:hover {
