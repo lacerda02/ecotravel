@@ -2,12 +2,12 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Pagamento EcoTravel</title>
+  <title>Pagamento EcoTravel - STK Push Sandbox</title>
 </head>
 <body>
-  <h2>Pagamento com M-Pesa</h2>
+  <h2>Pagamento com M-Pesa (STK Push Sandbox)</h2>
   <form id="payForm">
-    <input type="text" name="phone" placeholder="Número (84xxxxxxx)" required><br>
+    <input type="text" name="phone" placeholder="Número (ex: 254708374149)" required><br>
     <input type="number" name="amount" placeholder="Valor (MZN)" required><br>
     <button type="submit">Pagar</button>
   </form>
@@ -15,20 +15,24 @@
 
   <script>
     document.getElementById("payForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const formData = new FormData(e.target);
-  const payload = Object.fromEntries(formData.entries());
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const payload = Object.fromEntries(formData.entries());
 
-  const response = await fetch("http://localhost:3000/api/pay", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
-  });
+      try {
+        const response = await fetch("http://localhost:3000/api/pay", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
 
-  const result = await response.json();
-  document.getElementById("status").innerText = result.message;
-});
-
+        const result = await response.json();
+        document.getElementById("status").innerText = result.message;
+      } catch (err) {
+        document.getElementById("status").innerText = "Erro ao contactar o servidor.";
+        console.error(err);
+      }
+    });
   </script>
 </body>
 </html>
